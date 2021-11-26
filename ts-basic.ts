@@ -75,10 +75,10 @@ const exerciseOne = () => {
     // • Add type annotations (as explicit as possible)
     // • Fix errors (if applicable)
   
-    const sequence:any = Array.from(Array(10).keys());
-    const animals:any = ['pangolin', 'aardvark', 'echidna', 'binturong'];
-    const stringsAndNumbers:any = [1, 'one', 2, 'two', 3, 'three'];
-    const allMyArrays:any = [sequence, animals, stringsAndNumbers];
+    const sequence:number[] = Array.from(Array(10).keys());
+    const animals:string[] = ['pangolin', 'aardvark', 'echidna', 'binturong'];
+    const stringsAndNumbers:(string|number)[] = [1, 'one', 2, 'two', 3, 'three'];
+    const allMyArrays:Array<any> = [sequence, animals, stringsAndNumbers];
   
     console.log('Exercise 1.5', allMyArrays);
   
