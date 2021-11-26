@@ -95,7 +95,7 @@ const exerciseOne = () => {
     // later we destructure it
     const [name, qty] = inventoryItem;
   
-    const msg = addInventory(name, qty);
+    const msg:string = addInventory(name, qty);
   
     console.log('[Exercise 1.6]', msg);
   
